@@ -1,0 +1,96 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@200;400&family=Montserrat:wght@100;500&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Montserrat:wght@100;500&family=Poppins&display=swap");
+html, body {
+  height: 100%;
+  width: 100%;
+}
+:root {
+  --primary-color: hsl(31, 77%, 52%);
+  --secondary-color: hsl(184, 100%, 22%);
+  --tertiary-color: hsl(179, 100%, 13%);
+  --color: #fff;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.grid-link{
+  color: #fff;
+  background: #000;
+  width: 300px;
+  height: 30px
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  color: var(--color);
+  width: 50%;
+  margin: 50px 400px;
+  border-radius: 5px;
+}
+p {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 100;
+}
+.flex-item {
+  padding: 30px;
+  font-size: 15px;
+}
+.flex-item:nth-child(1) {
+  background-color: var(--primary-color);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.flex-item:nth-child(2) {
+  background-color: var(--secondary-color);
+}
+.flex-item:nth-child(3) {
+  background-color: var(--tertiary-color);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+h3 {
+  padding-bottom: 20px;
+  margin-top: 20px;
+  font-family: "Big Shoulders Display", "Times New Roman", Times, serif;
+  font-size: 25px;
+}
+button {
+  background: transparent;
+  border-radius: 15px;
+  width: 100px;
+  color: var(--color);
+  border: 1px solid var(--color);
+  margin-top: 70px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+button:hover {
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30%;
+  }
+.flex-item:nth-child(1) {
+  background-color: var(--primary-color);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+  .flex-item:nth-child(3) {
+  background-color: var(--tertiary-color);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+    border-top-right-radius: 0;
+}
+}
